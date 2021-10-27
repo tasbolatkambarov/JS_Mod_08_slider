@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+   }
+  
+   img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section {
+    display: flex;
+    width: 850px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    width: 800px;
+    height: 600px;
+    background-size: contain;
+    position: relative;
+  }
+  
+  .animated-image {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .scroll-block {
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .scroll-block:hover {
+    background-color:floralwhite;
+  }
+  
+  .scroll-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .scroll-icon-left {
+    transform: rotate(180deg);
+  }
